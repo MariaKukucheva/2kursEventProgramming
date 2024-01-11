@@ -1,0 +1,52 @@
+﻿@model Shop.ViewModels.Home.LoginVM 
+@{
+    this.Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Login";
+}
+
+
+<head>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+   @*  <script src="check.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Submit Form</title> *@
+</head>
+
+<body>
+
+    <div class="row row1">
+        <br>
+        <div class="columnIII">
+            <br><br>
+            <div class="gallery">
+
+                <h1 class="white1">Log in</h1>
+
+                <div class="row">
+                    <form action="/Home/Login" method="post">
+
+                        <h2 class="white1">Име:</h2>
+                        @Html.TextBoxFor( m => m.Username, new { placeholder = "Username"} )
+
+                        @Html.ValidationMessageFor(m => m.Username)
+
+                        <h2 class="white1">Парола:</h2>
+                        @Html.PasswordFor(m => m.Password, new { placeholder = "Password"})
+
+                        <br>
+                        @Html.ValidationMessage("authError", new { @style = "right" })
+                        <br><br>
+
+                        <input type="submit" class="right" value="Login" />
+                        <h4 class="white">Нямаш акаунт? <a href="/home/registration" class="white">Регистрирай се</a></h4>
+
+
+                    </form>
+                </div>   <br> <br>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+

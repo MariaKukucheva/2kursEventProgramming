@@ -1,0 +1,46 @@
+﻿@* @model Shop.ViewModels.Users.CreateVM 
+ *@@{
+    ViewData["Title"] = "Registration";
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Shop.styles.css" asp-append-version="true" />
+    <script src="check.js"></script>
+</head>
+
+    <div class="row row1">
+        <br>
+        <div class="columnIII">
+            <br><br>
+            <div class="gallery">
+
+                <h1 class="white">Запиши се</h1>
+                <h3 class="white">За да направим вашия акаунт, моля попълнете празните полета:</h3>
+
+                <div class="row">
+                    <form action="php1/data_post1.php" method="POST">
+
+                        <h2 class="white">Име:</h2>
+                        <input type="text" name="user_name1" placeholder="Enter name" required>
+
+
+                        <h2 class="white">Email:</h2>
+                        <input type="text" name="user_email1" placeholder="Enter Email" required>
+
+
+                        <h2 class="white">Парола:</h2>
+                        <input type="password" placeholder="Enter Password" name="password1" id="psw" required>
+
+                        <br><br><br>
+
+                        <input type="submit" value="Изпрати" class="button4">
+                        <h4 class="white">Вече имаш акаунт? <a href="/home/Login" class="white">Log in</a></h4>
+
+
+                    </form>
+                </div>   <br> <br>
+            </div>
+        </div>
+
+    </div>

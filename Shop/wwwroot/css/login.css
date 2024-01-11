@@ -1,0 +1,235 @@
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+a:hover:not(.active) {
+    background-color: rgb(250, 217, 229);
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pole:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+}
+
+.logo {
+    float: left;
+}
+
+/*for button*/
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+/*butons*/
+.buttons {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 3%;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2%;
+    transition-duration: 0.4s;
+}
+
+    .buttons:hover {
+        background-color: rgb(250, 217, 229);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 3%;
+        text-align: center;
+        display: inline-block;
+        font-size: 13px;
+        margin: 2%;
+        transition-duration: 0.4s;
+    }
+
+.buttonP2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 3%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2%;
+    transition-duration: 0.4s;
+}
+
+    .buttonP2:hover {
+        background-color: rgb(250, 217, 229);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 3%;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2%;
+        transition-duration: 0.4s;
+    }
+
+.button4 {
+    background-color: rgb(119, 158, 122);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 3%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2%;
+    transition-duration: 0.4s;
+}
+
+    .button4:hover {
+        background-color: rgb(124, 250, 244);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 3%;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2%;
+        transition-duration: 0.4s;
+    }
+
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 90%;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+
+.columnII {
+    float: left;
+    width: 50%;
+}
+
+.columnIII {
+    float: left;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.columnV {
+    float: left;
+    width: 45%;
+    margin-left: 3%;
+}
+
+.columnP2 {
+    float: left;
+    width: 16%;
+    margin-left: 3%;
+}
+/*square frame*/
+/*submit*/
+div.gallery {
+    border: 1px solid rgb(119, 158, 122);
+    width: 90%;
+    margin-left: 20%;
+}
+
+    div.gallery:hover {
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: 100%;
+    }
+
+/*fon*/
+.row1 {
+    background-image: url(images/background.jpg);
+}
+
+.white {
+    color: #ffffff;
+}
+
+
+/*down*/
+
+.down {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.left {
+    text-align: left;
+    color: #ffffff;
+}
+
+.left1 {
+    text-align: left;
+    margin: 0 !important;
+    ;
+    padding: 0;
+    color: #ffffff;
+}
+
+
+/* da ne zalepq poletata za danni*/
+* {
+    box-sizing: border-box
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+    width: 70%;
+    padding: 5%;
+    margin-left: 3%;
+    border: none;
+}
+
+/*php*/
+.error {
+    color: #FF0000;
+}

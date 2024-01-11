@@ -1,18 +1,194 @@
-html {
-  font-size: 14px;
+
+
+/*//////////////////////////////////*/
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-@media (min-width: 768px) {
-  html {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: rgb(2, 2, 2);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+ul a:hover:not(.active) {
+    background-color: rgb(255, 162, 156);
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pole:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+}
+
+.logo {
+    float: left;
+}
+
+/*for button*/
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+/*butons*/
+.button1 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 162, 156);
+    border: none;
+    padding: 3%;
+    text-align: center;
+    display: inline-block;
     font-size: 16px;
-  }
+    margin: 2%;
+    transition-duration: 0.4s;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+    .button1:hover {
+        background-color: rgb(255, 162, 156);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 3%;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2%;
+        transition-duration: 0.4s;
+    }
+
+
+.buttonP2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 3%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2%;
+    transition-duration: 0.4s;
 }
 
-body {
-  margin-bottom: 60px;
+    .buttonP2:hover {
+        background-color: rgb(250, 217, 229);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 3%;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2%;
+        transition-duration: 0.4s;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+.column {
+    float: left;
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+
+
+
+.columnII {
+    float: left;
+    width: 50%;
+}
+
+.columnV {
+    float: left;
+    width: 45%;
+    margin-left: 3%;
+}
+
+.container {
+    background-image: url(images/backgroundPink.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #000000;
+}
+/*down*/
+
+.down {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.left {
+    text-align: left;
+    color: #ffffff;
+}
+
+.left1 {
+    text-align: left;
+    margin: 0 !important;
+    padding: 0;
+    color: #ffffff;
+}
+
+
+
+
+/*vertical menu*/
+/* Fisrt level Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+li > a:after {
+    content: ' +';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+    
