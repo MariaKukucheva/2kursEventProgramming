@@ -1,4 +1,4 @@
-﻿
+﻿@* 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,6 @@
                 <img src="images/howInGreen.png" alt="logo"  class="logo">
                 <li> <a class="pole"></a></li>
                 <li><a href="/home/Index"> Начало </a></li>
-                <li><a href="/ViewModels/home/LogIn"> Начало </a></li>
                 <li><a href="/home/Catalog">Каталог</a></li>
                 <li><a href="contact.html">Контакти</a></li>
                 <li><a href="/home/Login"><span class="material-symbols-outlined">person</span></a></li>
@@ -69,7 +68,33 @@
     @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false) *@
+    @await RenderSectionAsync("Scripts", required: false) 
 </body>
 
+</html>
+  *@
+
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link href="~/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container header">
+        <h1 class="title">PhoneBook Manager</h1>
+        <div class="welcomeMsg">
+            <span>Hello, Annonymous</span>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="/Home/Index">HOME</a></li>
+            <li><a href="/Users/Index">USERS</a></li>
+            <li><a href="/Home/Login">LOGIN</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
 </html>

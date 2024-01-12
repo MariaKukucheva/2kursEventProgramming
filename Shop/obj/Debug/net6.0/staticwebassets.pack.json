@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Shop.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\css\\catalog.css",
+      "PackagePath": "staticwebassets\\css\\catalog.css"
+    },
+    {
+      "Id": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

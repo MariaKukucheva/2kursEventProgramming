@@ -1,5 +1,6 @@
-﻿@* @model Shop.ViewModels.Users.CreateVM 
- *@@{
+﻿@* 
+@model RegistrationModel
+@{
     ViewData["Title"] = "Registration";
 }
 <head>
@@ -19,28 +20,29 @@
                 <h3 class="white">За да направим вашия акаунт, моля попълнете празните полета:</h3>
 
                 <div class="row">
-                    <form action="php1/data_post1.php" method="POST">
+                    <form asp-controller="RegistrationController" asp-action="Index" method="post">
 
-                        <h2 class="white">Име:</h2>
-                        <input type="text" name="user_name1" placeholder="Enter name" required>
+                        <label for="username">Потребителско име:</label>
+                        <input type="text" id="username" name="Username" asp-for="Username" placeholder="Enter name"  required>
 
+                        <label for="password">Парола:</label>
+                        <input type="password" id="password" name="Password" asp-for="Password" placeholder="Enter password" required>
 
-                        <h2 class="white">Email:</h2>
-                        <input type="text" name="user_email1" placeholder="Enter Email" required>
+                        <label for="confirmPassword">Потвърди парола:</label>
+                        <input type="password" id="confirmPassword" name="ConfirmPassword" asp-for="ConfirmPassword" placeholder="ConfirmPassword" required>
 
+                        <label for="email">Имейл:</label>
+                        <input type="email" id="email" name="Email" asp-for="Email" placeholder="Enter email" required>
 
-                        <h2 class="white">Парола:</h2>
-                        <input type="password" placeholder="Enter Password" name="password1" id="psw" required>
+                        <button type="submit" class="button4">Регистрация</button>
 
-                        <br><br><br>
-
-                        <input type="submit" value="Изпрати" class="button4">
                         <h4 class="white">Вече имаш акаунт? <a href="/home/Login" class="white">Log in</a></h4>
 
-
                     </form>
+                   
                 </div>   <br> <br>
             </div>
         </div>
 
     </div>
+ *@

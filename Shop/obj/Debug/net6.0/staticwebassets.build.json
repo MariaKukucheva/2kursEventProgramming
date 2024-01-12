@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9Ul8XbeDLp8Vo6cMLBuY0GctpSb5305JS6gXoJjVjG0=",
+  "Hash": "wWdqbJaLA2ilbWqjHit7bj9vef3cANrStOuShLU07X8=",
   "Source": "Shop",
   "BasePath": "_content/Shop",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Shop.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\css\\catalog.css",
+      "SourceId": "Shop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\",
+      "BasePath": "_content/Shop",
+      "RelativePath": "css/catalog.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\catalog.css"
+    },
+    {
+      "Identity": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\css\\login.css",
+      "SourceId": "Shop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\",
+      "BasePath": "_content/Shop",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\Maria\\Documents\\GitHub\\2kursEventProgramming\\Shop\\wwwroot\\css\\site.css",
