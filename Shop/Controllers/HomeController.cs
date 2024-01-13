@@ -11,6 +11,10 @@ namespace Shop.Controllers
         {
             return View();
         }
+        public IActionResult Catalog()
+        {
+            return View();
+        }
 
         [HttpGet]
         public IActionResult Login()

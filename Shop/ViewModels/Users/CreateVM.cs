@@ -5,20 +5,21 @@
 //using System.Linq;
 //using System.Threading.Tasks;
 
-//namespace ProjectManagement.ViewModels.Users
+//namespace Shop.ViewModels.Users
 //{
 //    public class CreateVM
 //    {
-//        [DisplayName("Username: ")]
-//        [Required(ErrorMessage = "*This field is Required!")]
+
+//        [Required(ErrorMessage = "This field is Required!")]
 //        public string Username { get; set; }
 
-//        [DisplayName("Password: ")]
-//        [Required(ErrorMessage = "*This field is Required!")]
+//        [Required(ErrorMessage = "This field is Required!")]
 //        public string Password { get; set; }
 
-//        [DisplayName("Email: ")]
-//        [Required(ErrorMessage = "*This field is Required!")]
-//        public string Email { get; set; }
+//        [Required(ErrorMessage = "This field is Required!")]
+//        public string FirstName { get; set; }
+
+//        [Required(ErrorMessage = "This field is Required!")]
+//        public string LastName { get; set; }
 //    }
 //}
